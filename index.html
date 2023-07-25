@@ -41,27 +41,50 @@
   <body>
     <header>
       <!-- nav section starts  -->
-      <nav class="max-w-7xl mx-auto my-12 bg-[#f85559] rounded-[600px]">
-        <div class="navbar flex items-center">
-          <div class="">
+      <nav
+        class="md:max-w-[90vw] mx-auto my-12 md:p-1.5 bg-white md:bg-[#f85559] rounded-[600px]"
+      >
+        <div class="navbar flex items-center justify-between px-4">
+          <div class="gap-7 hidden lg:flex font-medium text-white text-lg">
             <a class="">Home</a>
             <a href="">About Us</a>
             <a href="">Shop</a>
             <a href="">All Fruits</a>
           </div>
-          <div>
-            <img src="images/" alt="">
+          <div class="flex gap-7">
+            <img src="images/logo.png" alt="" />
+            <p class="font-bold text-3xl md:text-white md:text-4xl">Fruit Burst</p>
           </div>
           <!-- input type + svg section  -->
           <div class="flex-none gap-2">
-            <div class="form-control">
+            <div class="form-control relative">
               <input
                 type="text"
-                placeholder="Search"
-                class="input input-bordered w-24 md:w-auto"
+                placeholder="Search Here"
+                class="input rounded-3xl w-24 hidden lg:block md:w-56"
               />
+              <!-- search icon  -->
+              <div
+                class="absolute inset-y-0 right-3 hidden items-center pl-3 pointer-events-none lg:flex"
+              >
+                <svg
+                  class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                  ></path>
+                </svg>
+              </div>
             </div>
-            <div class="dropdown dropdown-end">
+            <div class="dropdown dropdown-end lg:hidden">
               <label tabindex="0" class="btn avatar">
                 <div>
                   <!-- svg start  -->
@@ -82,14 +105,13 @@
                 tabindex="0"
                 class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
               >
+                <li><a class="text-2xl">Home</a></li>
+                <li><a class="text-2xl">About us</a></li>
+                <li><a class="text-2xl">Shop</a></li>
+                <li><a class="text-2xl">All Fruits</a></li>
                 <li>
-                  <a class="justify-between">
-                    Profile
-                    <span class="badge">New</span>
-                  </a>
+                  <a href=""><i class="fa-solid fa-magnifying-glass text-3xl"></i></a>
                 </li>
-                <li><a>Settings</a></li>
-                <li><a>Logout</a></li>
               </ul>
             </div>
           </div>
