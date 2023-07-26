@@ -45,7 +45,7 @@
         class="md:max-w-[85vw] mx-auto my-5 md:my-12 md:p-1.5 bg-white md:bg-[#f85559] rounded-[600px]"
       >
         <div class="navbar flex items-center justify-between px-4">
-          <div class="gap-7 hidden lg:flex font-medium text-white text-lg">
+          <div class="gap-7 hidden lg:flex font-medium text-white text-lg lato">
             <a href="">Home</a>
             <a href="">About Us</a>
             <a href="">Shop</a>
@@ -53,7 +53,7 @@
           </div>
           <div class="flex gap-7">
             <img src="images/logo.png" alt="" />
-            <p class="font-bold text-3xl md:text-white md:text-4xl">
+            <p class="font-bold text-3xl md:text-white md:text-4xl lato">
               Fruit Burst
             </p>
           </div>
@@ -128,13 +128,20 @@
         <div class="carousel w-full">
           <div
             id="slide1"
-            class="carousel-item relative w-full flex justify-center items-center"
+            class="carousel-item relative w-full flex justify-center items-center mb-40"
           >
             <img src="./images/banner1.png" class="w-full" />
-            <div class="absolute">
-              <h3>Exotic tastes at your doorstep</h3>
-              <p>We supply highly quality organic products</p>
-              <button class="btn">Shop Now</button>
+            <!-- banner text div  -->
+            <div class="absolute lg:top-[20%] flex flex-col items-center gap-3">
+              <h3
+                class="max-w-xl text-6xl text-white font-bold text-center lato"
+              >
+                Exotic tastes at your doorstep
+              </h3>
+              <p class="text-xl font-medium lato text-white">
+                We supply highly quality organic products
+              </p>
+              <button class="btn bg-[#f85559] text-white lato">Shop Now</button>
             </div>
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
@@ -142,7 +149,35 @@
               <a href="#slide4" class="btn btn-circle">❮</a>
               <a href="#slide2" class="btn btn-circle">❯</a>
             </div>
+            <!-- fruit section  -->
+            <section
+            style="bottom: -18%;"
+            class="lg:max-w-5xl md:hidden rounded-xl lg:flex mx-auto justify-between lg:max-h-64 p-5 absolute  bg-white shadow-md hidden"
+          >
+            <div class="flex flex-col justify-center items-center">
+              <img class="h-28" src="./images/fruit1.png" alt="" />
+              <p>Strawberry</p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <img src="./images/fruit2.png" alt="" />
+              <p>Orange</p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <img src="./images/fruit3.png" alt="" />
+              <p>Mango</p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <img src="./images/fruit4.png" alt="" />
+              <p>Strawberry</p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <img src="./images/fruit5.png" alt="" />
+              <p>Pomegranate</p>
+            </div>
+          </section>
+          <!-- fruit section ends  -->
           </div>
+          <!-- slide no 2  -->
           <div id="slide2" class="carousel-item relative w-full">
             <img
               src="/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
@@ -155,6 +190,7 @@
               <a href="#slide3" class="btn btn-circle">❯</a>
             </div>
           </div>
+          <!-- slide no 3  -->
           <div id="slide3" class="carousel-item relative w-full">
             <img
               src="/images/stock/photo-1414694762283-acccc27bca85.jpg"
@@ -167,6 +203,7 @@
               <a href="#slide4" class="btn btn-circle">❯</a>
             </div>
           </div>
+          <!-- slide no 4 -->
           <div id="slide4" class="carousel-item relative w-full">
             <img
               src="/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
