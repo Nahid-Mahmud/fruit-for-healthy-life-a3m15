@@ -24,9 +24,17 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
+   <!-- custom css  -->
     <style>
       .lato {
         font-family: "Lato", sans-serif;
+      }
+      .overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 12px;
       }
     </style>
     <!-- fontawesome icon cdn  -->
@@ -37,16 +45,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- custom css  -->
-    <style>
-      .overlay {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.6);
-        border-radius: 12px;
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -1051,9 +1049,10 @@
                 <i class="fa-solid fa-user-group"></i>
               </div>
               <div>
-                <h4 class="text-[#121212] text-xl font-bold underline lato">
+                <h4 class="text-[#121212] text-xl font-bold lato">
                   Dedicated Team
                 </h4>
+                <div class="w-28 my-1 bg-black h-[2px] mx-auto md:mx-0"></div>
                 <p
                   class="max-w-[354px] lato font-medium text-[#6d6d6d] text-base"
                 >
@@ -1071,9 +1070,8 @@
                 <i class="fa-regular fa-heart"></i>
               </div>
               <div>
-                <h5 class="text-[#121212] text-xl font-bold underline">
-                  Fresh is Best
-                </h5>
+                <h5 class="text-[#121212] text-xl font-bold">Fresh is Best</h5>
+                <div class="w-28 my-1 bg-black h-[2px] mx-auto md:mx-0"></div>
                 <p
                   class="max-w-[354px] lato font-medium text-[#6d6d6d] text-base"
                 >
@@ -1092,9 +1090,10 @@
                 <i class="fa-solid fa-gift"></i>
               </div>
               <div>
-                <h5 class="underline text-[#121212] text-xl font-bold">
+                <h5 class="text-[#121212] text-xl font-bold">
                   Gift Certificates
                 </h5>
+                <div class="w-28 my-1 bg-black h-[2px] mx-auto md:mx-0"></div>
                 <p
                   class="max-w-[354px] lato font-medium text-[#6d6d6d] text-base"
                 >
@@ -1121,12 +1120,15 @@
               >
                 <i class="fa-solid fa-seedling"></i>
               </div>
-              <div>
-                <h4 class="text-[#121212] text-xl font-bold underline lato">
+              <div class="lg:relative">
+                <h4 class="text-[#121212] text-xl font-bold lato">
                   Integrated Supplier
                 </h4>
+                <div
+                  class="w-28 my-1 bg-black h-[2px] mx-auto md:mx-0 lg:absolute lg:right-0"
+                ></div>
                 <p
-                  class="max-w-[354px] lato font-medium text-[#6d6d6d] text-base"
+                  class="max-w-[354px] lato font-medium text-[#6d6d6d] text-base my-2"
                 >
                   he vibrant colors of fruits signify the presence of different
                   nutrients.
@@ -1141,12 +1143,15 @@
               >
                 <i class="fa-solid fa-ice-cream"></i>
               </div>
-              <div>
-                <h5 class="text-[#121212] text-xl font-bold underline">
+              <div class="lg:relative">
+                <h5 class="text-[#121212] text-xl font-bold">
                   Sustainable Practice
                 </h5>
+                <div
+                  class="w-28 my-1 bg-black h-[2px] mx-auto md:mx-0 lg:absolute lg:right-0"
+                ></div>
                 <p
-                  class="max-w-[354px] lato font-medium text-[#6d6d6d] text-base"
+                  class="max-w-[354px] lato font-medium text-[#6d6d6d] text-base my-2"
                 >
                   Seasonal fruits are often more flavorful, nutritious, and
                   economical. Buying in-season fruits also supports local
@@ -1162,12 +1167,15 @@
               >
                 <i class="fa-regular fa-thumbs-up"></i>
               </div>
-              <div>
-                <h5 class="underline text-[#121212] text-xl font-bold">
+              <div class="lg:relative">
+                <h5 class="text-[#121212] text-xl font-bold">
                   The Benefits Only
                 </h5>
+                <div
+                  class="w-28 my-1 bg-black h-[2px] mx-auto md:mx-0 lg:absolute lg:right-0"
+                ></div>
                 <p
-                  class="max-w-[354px] lato font-medium text-[#6d6d6d] text-base"
+                  class="max-w-[354px] lato font-medium text-[#6d6d6d] text-base my-2"
                 >
                   Fruit skins often contain additional nutrients and fiber. If
                   appropriate, consume fruits with their skin to maximize their
